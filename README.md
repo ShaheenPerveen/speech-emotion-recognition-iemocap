@@ -46,6 +46,7 @@ Below is an example:
 
 ## Codebase
 Following is the code base tree with explanation of files:
+``` bash
 speech-emotion-recognition-iemocap
 ├── README.md
 ├── code
@@ -74,6 +75,7 @@ speech-emotion-recognition-iemocap
 └── image
     └── mel-spectrogram.png
 
+```
 
 
 
