@@ -77,6 +77,25 @@ speech-emotion-recognition-iemocap
 
 ```
 
+1. audio_analysis.ipynb - analysis of audio signals
+2. extract_acoustic_features_from_audio_vectors.ipynb - extracting audio features using librosa
+3. extract_labels_for_audio.ipynb - extracting emotion labels for audio clips of ecah session
+4. saving_spectrogram_audio_data_parallel.ipynb - generating 2D spectrogram images
+5. creating_train_test_folder.ipynb - creating training and test dataset using extracted features and images above
+6. PyTorch_CNN.ipynb - simple CNN using PyTorch
+7. PyTorch_ResNet18.ipynb - 18 layered ResNet training 
+8. PyTorch_ResNet34_SGD.ipynb - 34 layered ResNet training
+9. data_prep_and_lstm.ipynb - training lstm model using acoustic features as embeddings or input
+10. DNN_with_MFCC.ipynb - training 2 layered DNN using MFCC from acoustic features 
+11. ML_with_MFCC_Normalized.ipynb - training ensemble model using normalized MFCC
+12. features_analysis.ipynb - analyzing acoustic features to spot difference between values across 4 emotion classes
+13. data_preparation_for_text_based_model.ipynb - text data preparation to be used as an input in multi-modal approach
+
+## TODOs
+[] train a CNN or LSTM model using features from text. Features could be either tf-idf vectors of dialogues or embedding from a pretrained network
+[] create a multi modal pipeline to pool 34 layered PyTorch model, ML Ensemble model, text based model
+
+
 
 
 
