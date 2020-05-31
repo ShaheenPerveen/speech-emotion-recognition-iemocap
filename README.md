@@ -44,4 +44,9 @@ Below is an example:
   - DNN with MFCC
   - ML ensemble model
 
+## Codebase
+Following is the code base tree with explanation of files:
+![codebase-tree](/image/codebase.png)
+
+
 
