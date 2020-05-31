@@ -24,8 +24,24 @@ Following are the steps applied to arrive at the final model:
 - Analyzed audio signals, extracted labels tagged to sessions. Each session has been tagged with different emotions based on timestamp
 - Low Level Descriptors are expected to capture emotion related information. Extracted acoustic features like MFCC, Mel, pitch, contrast, flatness, zero crossing rate, chroma and harmonic means. Apart from using these acoustic features directly, I have applied aggregators and summarizers like mean, min, max, standard deviation etc
 - These extracted features will be used as input in different models
+
+##### acoustic feature based models
+- trained an LSTM model using acoustic feature as embeddings to the model
+- trained an ensemble model using GBM, Random Forest, XG Boost
+- trained a DNN (Deep Neural Network) using MFCC features
+
+##### 2D spectrogram based models
 - Using the audio signal, generated images of mel-spectrogram. A spectrogram is a representation of speech over time and frequency. 2D convolution filters help capture 2D feature maps in any given input. Such rich features cannot be extracted and applied when speech is converted to text and or phonemes. Spectrograms, which contain extra information not available in just text, gives us further capabilities in our attempts to improve emotion recognition
 Below is an example:
 ![mel-spectrogram](/image/mel-spectrogram.png)
+- PyTorch based ResNet models are trained using the 2D spectrograms. I have trained three different models.
+  - A CNN with 4 layers
+  - ResNet with 18 layers
+  - ResNet with 34 layers and SGD as optimizer
+
+- Finally, used average ensembling of probabilities predicted by follwing models to get the final accuracy of 65%
+  - PyTorch with 34 layers
+  - DNN with MFCC
+  - ML ensemble model
 
 
