@@ -3,7 +3,7 @@
 
 ## Introduction
 
-In this project, I have tried to recognize emotions from audio signals of IEMOCAP dataset. The audio files are in english language. IEMOCAP is an acted, multimodal and multispeaker database, recently collected at SAIL lab at USC. It contains 12 hours of audiovisual information. Different windows of audio sessions has been tagged with one of the eight emotions(frustrated, angry, happiness, sadness, excited, surprised, disgusted and neutral). Details of dataset can be found [here](https://sail.usc.edu/iemocap/). In the approach, I have only utilized the audio part of the data
+In this project, I have tried to recognize emotions from audio signals of IEMOCAP dataset. The audio files are in english language. IEMOCAP is an acted, multimodal and multispeaker database, recently collected at SAIL lab at USC. It contains 12 hours of audiovisual information. Different windows of audio sessions has been tagged with one of the eight emotions(frustrated, angry, happiness, sadness, excited, surprised, disgusted and neutral). Details of dataset can be found [here](https://sail.usc.edu/iemocap/). In this approach, I have only utilized the audio part of the data
 
 ## Requirements
 1. Pytorch
@@ -25,12 +25,12 @@ Following are the steps applied to arrive at the final model:
 - Low Level Descriptors are expected to capture emotion related information. Extracted acoustic features like MFCC, Mel, pitch, contrast, flatness, zero crossing rate, chroma and harmonic means. Apart from using these acoustic features directly, I have applied aggregators and summarizers like mean, min, max, standard deviation etc
 - These extracted features will be used as input in different models
 
-##### acoustic feature based models
+#### acoustic feature based models
 - trained an LSTM model using acoustic feature as embeddings to the model
 - trained an ensemble model using GBM, Random Forest, XG Boost
 - trained a DNN (Deep Neural Network) using MFCC features
 
-##### 2D spectrogram based models
+#### 2D spectrogram based models
 - Using the audio signal, generated images of mel-spectrogram. A spectrogram is a representation of speech over time and frequency. 2D convolution filters help capture 2D feature maps in any given input. Such rich features cannot be extracted and applied when speech is converted to text and or phonemes. Spectrograms, which contain extra information not available in just text, gives us further capabilities in our attempts to improve emotion recognition
 Below is an example:
 ![mel-spectrogram](/image/mel-spectrogram.png)
