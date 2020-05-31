@@ -26,6 +26,6 @@ Following are the steps applied to arrive at the final model:
 - These extracted features will be used as input in different models
 - Using the audio signal, generated images of mel-spectrogram. A spectrogram is a representation of speech over time and frequency. 2D convolution filters help capture 2D feature maps in any given input. Such rich features cannot be extracted and applied when speech is converted to text and or phonemes. Spectrograms, which contain extra information not available in just text, gives us further capabilities in our attempts to improve emotion recognition
 Below is an example:
-![mel-specvtrogram](/Users/shaheen.perveen/Desktop/Screenshot 2020-05-31 at 7.33.05 PM.png)
+![mel-spectrogram](/Users/shaheen.perveen/Desktop/Screenshot 2020-05-31 at 7.33.05 PM.png)
 
 
