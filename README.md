@@ -46,7 +46,35 @@ Below is an example:
 
 ## Codebase
 Following is the code base tree with explanation of files:
-![codebase-tree](/image/codebase.png)
+speech-emotion-recognition-iemocap
+├── README.md
+├── code
+│   ├── data_prep
+│   │   ├── acoustic_feature_extraction
+│   │   │   ├── audio_analysis.ipynb
+│   │   │   ├── extract_acoustic_features_from_audio_vectors.ipynb
+│   │   │   └── extract_labels_for_audio.ipynb
+│   │   ├── spectrogram_generation
+│   │   │   └── saving_spectrogram_audio_data_parallel.ipynb
+│   │   └── train_test
+│   │       └── creating_train_test_folder.ipynb
+│   └── models
+│       ├── dl_models_using_spectrogram
+│       │   ├── PyTorch_CNN.ipynb
+│       │   ├── PyTorch_ResNet18.ipynb
+│       │   └── PyTorch_ResNet34_SGD.ipynb
+│       ├── lstm_model_using_acoustic_features
+│       │   └── data_prep_and_lstm.ipynb
+│       ├── ml_dl_models_using_mfcc
+│       │   ├── DNN_with_MFCC.ipynb
+│       │   ├── ML_with_MFCC_Normalized.ipynb
+│       │   └── features_analysis.ipynb
+│       └── text_model
+│           └── data_preparation_for_text_based_model.ipynb
+└── image
+    └── mel-spectrogram.png
+
+
 
 
 
