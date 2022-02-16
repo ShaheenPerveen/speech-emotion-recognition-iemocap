@@ -92,8 +92,8 @@ speech-emotion-recognition-iemocap
 13. data_preparation_for_text_based_model.ipynb - text data preparation to be used as an input in multi-modal approach
 
 ## TODOs
-[] train a CNN or LSTM model using features from text. Features could be either tf-idf vectors of dialogues or embedding from a pretrained network
-[] create a multi modal pipeline to pool 34 layered PyTorch model, ML Ensemble model, text based model
+1. train a CNN or LSTM model using features from text. Features could be either tf-idf vectors of dialogues or embedding from a pretrained network
+2. create a multi modal pipeline to pool 34 layered PyTorch model, ML Ensemble model, text based model
 
 
 
